@@ -11,9 +11,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        edit()
     }
 
+    //Create BarButtonItem
+    func edit() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose,
+                                                                 target: self,
+                                                                 action: #selector(openDetailVC(param: )))
+        
+    }
+    
+    @objc func openDetailVC(param : UIBarButtonItem) {
+        let detailVC = DetailViewController()
+        show(detailVC, sender: nil)
+    }
 
 }
 
