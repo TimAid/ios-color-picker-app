@@ -7,26 +7,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIColorPickerViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        edit()
+        createButton()
     }
 
-    //Create BarButtonItem
-    func edit() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .compose,
-                                                                 target: self,
-                                                                 action: #selector(openDetailVC(param: )))
-        
+    //Create Button
+    func createButton() {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
+        button.layer.cornerRadius = 18
+        view.addSubview(button)
+        button.backgroundColor = .systemGray
+        button.setTitle("Choose Color", for: .normal)
+        button.center = view.center
+        button.addTarget(self, action: #selector(openDetailVC(param:)), for: .touchUpInside)
     }
     
-    @objc func openDetailVC(param : UIBarButtonItem) {
-        let detailVC = DetailViewController()
-        show(detailVC, sender: nil)
+    
+    @objc private  func openDetailVC(param : UIBarButtonItem) {
+        
+        let colorPickerVC = UIColorPickerViewController()
+        colorPickerVC.delegate = self
+        present(colorPickerVC, animated: true)
     }
 
+    func colorPickerViewController(_ viewController: UIColorPickerViewController, didSelect color: UIColor, continuously: Bool) {
+        view.backgroundColor = color
+    }
 }
 
