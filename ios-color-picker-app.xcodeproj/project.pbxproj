@@ -13,7 +13,6 @@
 		0D8C603A285770A20025CBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C6038285770A20025CBD9 /* Main.storyboard */; };
 		0D8C603C285770A60025CBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C603B285770A60025CBD9 /* Assets.xcassets */; };
 		0D8C603F285770A60025CBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C603D285770A60025CBD9 /* LaunchScreen.storyboard */; };
-		0DA83EE328584589000C5A4D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA83EE228584589000C5A4D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		0D8C603B285770A60025CBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D8C603E285770A60025CBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D8C6040285770A60025CBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DA83EE228584589000C5A4D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 			children = (
 				0D8C6032285770A20025CBD9 /* AppDelegate.swift */,
 				0D8C6034285770A20025CBD9 /* SceneDelegate.swift */,
-				0DA83EE228584589000C5A4D /* DetailViewController.swift */,
 				0D8C6036285770A20025CBD9 /* ViewController.swift */,
 				0D8C6038285770A20025CBD9 /* Main.storyboard */,
 				0D8C603B285770A60025CBD9 /* Assets.xcassets */,
@@ -144,7 +141,6 @@
 				0D8C6037285770A20025CBD9 /* ViewController.swift in Sources */,
 				0D8C6033285770A20025CBD9 /* AppDelegate.swift in Sources */,
 				0D8C6035285770A20025CBD9 /* SceneDelegate.swift in Sources */,
-				0DA83EE328584589000C5A4D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
